@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte - Agricultura Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Agro<span>Forte</span></a>
+            <ul class="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#simulador">Crédito Verde</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>O Futuro da Terra é Sustentável</h1>
+            <p>Unindo tecnologia de ponta, produtividade recorde e preservação ambiental para fortalecer o agronegócio.</p>
+            <a href="#simulador" class="btn-principal">Simular Crédito Verde</a>
+        </div>
+    </header>
+
+    <section id="sobre" class="secao container">
+        <div class="sobre-grid">
+            <div class="sobre-texto">
+                <h2>Agro Forte: Produtividade com Consciência</h2>
+                <p>A agricultura sustentável não diminui o rendimento; ela protege o futuro. Através de práticas inovadoras, conseguimos recuperar solos degradados, economizar recursos hídricos preciosos e garantir que as próximas gerações continuem colhendo com a mesma força de hoje.</p>
+            </div>
+            <div class="sobre-stats">
+                <div class="stat-box">
+                    <h3>+30%</h3>
+                    <p>De eficiência hídrica com gotejamento</p>
+                </div>
+                <div class="stat-box">
+                    <h3>0%</h3>
+                    <p>De desmatamento ilegal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilares" class="secao-escura">
+        <div class="container">
+            <h2 class="titulo-central">Nossos Pilares de Sustentabilidade</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Energia Limpa</h3>
+                    <p>Uso de matrizes solares e biomassa para alimentar sistemas de irrigação e maquinários agrícolas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💧</div>
+                    <h3>Manejo Hídrico</h3>
+                    <p>Sensores IoT no solo que determinam a quantidade exata de água necessária, evitando desperdícios.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Bioinsumos</h3>
+                    <p>Substituição gradativa de defensivos químicos por defensores biológicos e adubação orgânica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="secao container">
+        <div class="simulador-container">
+            <h2>Simulador de Incentivo: Crédito Verde</h2>
+            <p class="subtitulo">Marque as práticas adotadas na sua propriedade para calcular o seu nível de sustentabilidade e a taxa estimada de juros para financiamento agrícola.</p>
+            
+            <div class="simulador-interface">
+                <div class="check-lista">
+                    <h3>Práticas Praticadas:</h3>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="pratica1" value="25" onchange="atualizarSimulador()">
+                        Faz Rotação de Culturas regularmente
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="pratica2" value="25" onchange="atualizarSimulador()">
+                        Utiliza Sistema de Plantio Direto (SPD)
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="pratica3" value="25" onchange="atualizarSimulador()">
+                        Possui captação de água da chuva ou gotejamento
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" id="pratica4" value="25" onchange="atualizarSimulador()">
+                        Usa energia renovável (Solar/Biomassa)
+                    </label>
+                </div>
+
+                <div class="resultado-painel">
+                    <h3>Seu Diagnóstico:</h3>
+                    <div class="barra-progresso-fundo">
+                        <div id="barra-progresso" class="barra-progresso-frente"></div>
+                    </div>
+                    <div class="score-texto">Pontuação: <span id="score-valor">0</span>%</div>
+                    
+                    <div class="status-badge" id="status-badge">Propriedade Convencional</div>
+                    
+                    <div class="taxa-estimada">
+                        <p>Taxa de Juros Estimada (Plano Safra Verde):</p>
+                        <h4 id="taxa-valor">10.5% a.a.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agro Forte. Cultivando a tecnologia, colhendo sustentabilidade.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
